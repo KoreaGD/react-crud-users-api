@@ -5,14 +5,13 @@ import React from 'react';
 
 import Logo from '../components/Templates/Logo';
 import Nav from '../components/Templates/Nav';
-import Main from '../components/Templates/Main'
 import Footer from '../components/Templates/Footer'
+import Home from '../components/Home';
 
 export default props =>
     <div className="app">
         <Logo />
         <Nav />
-        <Main icon="home" title="Inicio"
-            subtitle="Segundo Projeto do capitulo de React." />
+        <Home />
         <Footer />
     </div>
