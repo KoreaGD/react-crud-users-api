@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 export default props =>
-    <props.tag href={!!props.href ? props.href : ''} to={!!props.to ? props.to : ''} >
-        <i className={`${props.className}`}></i> {props.label}
-    </props.tag >
+    <Link to={props.to} >
+        <i className={`fa fa-${props.icon}`}></i> {props.label}
+    </Link >
